@@ -23,4 +23,23 @@ public class PoolDriversTest {
         assertEquals(2, poolDrivers.size());   
     }
 
+    @Test
+    public void assignDriver() {
+        
+        Race race1 = new Race();
+        List<Driver> Drivers = new ArrayList<Driver>();
+        PoolDrivers poolDrivers = new PoolDrivers(Drivers);
+
+        String[] nombres = { "Samantha", "Fox", "Mola" };
+		for (String nombre : nombres) {
+			Driver driver = new Driver(nombre);
+            poolDrivers.getPoolDrivers().add(driver);
+        }
+
+        race1.assignDriver(poolDrivers);
+        assertEquals(true, race1.getDriver().isOccupied());
+
+
+        }
+
     }
