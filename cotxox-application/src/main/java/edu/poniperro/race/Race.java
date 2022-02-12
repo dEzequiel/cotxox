@@ -32,5 +32,11 @@ public class Race {
         this.expectedTime = expectedTime;
     }
 
+    public void setRaceTime(int raceTime) {
+        this.raceTime = raceTime;
+    }
+
+    
+
 
 }
