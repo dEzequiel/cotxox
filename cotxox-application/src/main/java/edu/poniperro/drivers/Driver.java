@@ -34,6 +34,10 @@ public class Driver {
     public void setOccupied(boolean status) {
         this.isOccupied = status;
     }
+
+    public boolean isOccupied() {
+        return this.isOccupied;
+    }
 }
 
 
