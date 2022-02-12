@@ -15,6 +15,9 @@ public class Race {
 
     private Driver driver = null;
      
+    public Race() {
+
+    }
 
     public Race(String creditCard, String origin, String destination) {
         this.creditCard = creditCard;
@@ -44,6 +47,9 @@ public class Race {
 
     public void setDriver(Driver driver) {
         this.driver = driver;
+    }
+    public Driver getDriver() {
+        return this.driver;
     }
 
     public void assignDriver(PoolDrivers driver) {
