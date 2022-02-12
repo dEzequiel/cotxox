@@ -24,5 +24,9 @@ public class Race {
         this.destination = destination;
     }
 
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
+
 
 }
