@@ -1,17 +1,23 @@
 package edu.poniperro.drivers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Driver {
 
-    private final String name;
-    private String model;
-    private String enrollment;
+    private String name = null;
+    private String model = null;
+    private String enrollment = null;
     private double averageRating;
     private boolean isOccupied = false;
-    private List<Byte> ratings = new ArrayList<Byte>();
+    private List<Byte> ratings = new ArrayList<>();
     
+    public Driver(){
+
+    };
+
     public Driver(String name, String model, String enrollment) {
         this.name = name;
         this.model = model;
@@ -38,6 +44,10 @@ public class Driver {
     public boolean isOccupied() {
         return this.isOccupied;
     }
+
+    // private double calculateAverageRating() {
+        
+    // }
 }
 
 
