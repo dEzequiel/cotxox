@@ -15,4 +15,10 @@ public class Race {
         this.origin = origin;
         this.destination = destination;
     }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+
 }
