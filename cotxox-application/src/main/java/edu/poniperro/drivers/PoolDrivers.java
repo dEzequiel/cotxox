@@ -11,5 +11,9 @@ public class PoolDrivers {
         this.drivers = drivers;
     }
 
-    
+    public List<Driver> getPoolDrivers() {
+        return this.drivers;
+    }
+
+
 }
