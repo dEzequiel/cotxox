@@ -20,5 +20,9 @@ public class Race {
         this.origin = origin;
     }
 
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
 
 }
