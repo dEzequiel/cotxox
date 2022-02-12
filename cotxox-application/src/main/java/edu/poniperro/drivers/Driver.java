@@ -21,6 +21,12 @@ public class Driver {
     public void setModel(String model) {
         this.model = model;
     }
+
+    public void setEnrollment(String enrollment) {
+        this.enrollment = enrollment;
+    }
+
+    
 }
 
 
