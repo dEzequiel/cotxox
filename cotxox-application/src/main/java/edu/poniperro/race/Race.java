@@ -28,5 +28,9 @@ public class Race {
         this.distance = distance;
     }
 
+    public void setExpectedTime(int expectedTime) {
+        this.expectedTime = expectedTime;
+    }
+
 
 }
