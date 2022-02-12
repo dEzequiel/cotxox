@@ -1,12 +1,18 @@
 package edu.poniperro.race;
 
 public class Race {
-    private final String creditCard = "";
-    private final String origin = "";
+    private String creditCard = "";
+    private String origin = "";
     private String destination = "";
     private double distance;
-    private final int expectedTime = 0;
-    private final int raceTime = 0;
-    private final int totalCost = 0;
-    private int tip = 0;
+    private int expectedTime;
+    private int raceTime;
+    private int totalCost;
+    private int tip;
+
+    public Race(String creditCard, String origin, String destination) {
+        this.creditCard = creditCard;
+        this.origin = origin;
+        this.destination = destination;
+    }
 }
