@@ -30,6 +30,10 @@ public class Driver {
         // Cast to parse int into byte.
         this.ratings.add((byte) rating);
     }
+
+    public void setOccupied(boolean status) {
+        this.isOccupied = status;
+    }
 }
 
 
