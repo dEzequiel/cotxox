@@ -1,5 +1,8 @@
 package edu.poniperro.race;
 
+import edu.poniperro.drivers.Driver;
+import edu.poniperro.drivers.PoolDrivers;
+
 public class Race {
     private String creditCard = "";
     private String origin = "";
@@ -9,6 +12,9 @@ public class Race {
     private int raceTime;
     private int totalCost;
     private int tip;
+
+    private Driver driver = null;
+     
 
     public Race(String creditCard, String origin, String destination) {
         this.creditCard = creditCard;
@@ -36,7 +42,19 @@ public class Race {
         this.raceTime = raceTime;
     }
 
+    public void setDriver(Driver driver) {
+        this.driver = driver;
+    }
+
+    public void assignDriver(PoolDrivers driver) {
+        setDriver(driver.assignDriver());
+    }
+
     
+
+
+
+
 
 
 }
