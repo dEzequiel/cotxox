@@ -26,7 +26,10 @@ public class Driver {
         this.enrollment = enrollment;
     }
 
-    
+    public void setRating(int rating) {
+        // Cast to parse int into byte.
+        this.ratings.add((byte) rating);
+    }
 }
 
 
