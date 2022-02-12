@@ -18,10 +18,10 @@ public class Driver {
 
     };
 
-    public Driver(String name, String model, String enrollment) {
+    public Driver(String name) {
         this.name = name;
-        this.model = model;
-        this.enrollment = enrollment;
+        // this.model = model;
+        // this.enrollment = enrollment;
     }
 
     public void setModel(String model) {
