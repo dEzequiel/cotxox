@@ -58,6 +58,10 @@ public class Race {
         this.expectedTime = expectedTime;
     }
 
+    public int getExpectedTime() {
+        return this.expectedTime;
+    }
+
     public void setRaceTime(int raceTime) {
         this.raceTime = raceTime;
     }
