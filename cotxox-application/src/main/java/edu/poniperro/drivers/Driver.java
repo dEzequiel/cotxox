@@ -67,10 +67,6 @@ public class Driver {
         return sum / this.getRatingNumbers();
     }
 
-    public void setAverageRating() {
-        this.averageRating = calculateAverageRating();
-    }
-
     public double getAverageRating() {
         return this.averageRating;
     }
