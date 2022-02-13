@@ -66,6 +66,10 @@ public class Race {
         this.raceTime = raceTime;
     }
 
+    public int getRaceTime() {
+        return this.raceTime;
+    }
+
     public void setDriver(Driver driver) {
         this.driver = driver;
     }
