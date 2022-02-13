@@ -35,8 +35,7 @@ public class PoolDriversTest {
 			Driver driver = new Driver(nombre);
             poolDrivers.getPoolDrivers().add(driver);
         }
-
-        race1.assignDriver(poolDrivers);
+        
         assertEquals(true, race1.getDriver().isOccupied());
 
 
