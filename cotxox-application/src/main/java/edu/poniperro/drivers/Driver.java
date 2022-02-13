@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
+import java.lang.Math;
 
 public class Driver {
 
@@ -49,14 +50,18 @@ public class Driver {
         return this.isOccupied;
     }
 
-    private double calculateAverageRating() {
+    public double calculateAverageRating() {
         // Convert each stream to int with map() and intValue() and then sum().
         int sum = ratings.stream().mapToInt(i -> i.intValue()).sum();
         return (double) sum;
     }
 
-    public void setAverageRating(double averageRating) {
+    public void setAverageRating() {
         this.averageRating = calculateAverageRating();
+    }
+
+    public double getAverageRating() {
+        return this.averageRating;
     }
 }
 
