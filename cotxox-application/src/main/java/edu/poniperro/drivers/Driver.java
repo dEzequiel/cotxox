@@ -32,7 +32,7 @@ public class Driver {
         this.enrollment = enrollment;
     }
 
-    public void setRating(int rating) {
+    public void setRating(double rating) {
         // Cast to parse int into byte.
         this.ratings.add((byte) rating);
     }
@@ -45,9 +45,15 @@ public class Driver {
         return this.isOccupied;
     }
 
-    // private double calculateAverageRating() {
-        
-    // }
+    private double calculateAverageRating() {
+        // Convert each stream to int with map() and intValue() and then sum().
+        int sum = ratings.stream().mapToInt(i -> i.intValue()).sum();
+        return (double) sum;
+    }
+
+    public void setAverageRating(double averageRating) {
+        this.averageRating = calculateAverageRating();
+    }
 }
 
 
