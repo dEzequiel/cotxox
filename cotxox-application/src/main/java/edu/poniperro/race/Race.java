@@ -34,6 +34,10 @@ public class Race {
         this.origin = origin;
     }
 
+    public String getOrigin() {
+        return this.origin;
+    }
+
     public void setDestination(String destination) {
         this.destination = destination;
     }
