@@ -50,6 +50,10 @@ public class Race {
         this.distance = distance;
     }
 
+    public double getDistance() {
+        return this.distance;
+    }
+
     public void setExpectedTime(int expectedTime) {
         this.expectedTime = expectedTime;
     }
