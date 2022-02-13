@@ -37,6 +37,10 @@ public class Driver {
         this.ratings.add((byte) rating);
     }
 
+    public List<Byte> getRatings() {
+        return this.ratings;
+    }
+
     public void setOccupied(boolean status) {
         this.isOccupied = status;
     }
