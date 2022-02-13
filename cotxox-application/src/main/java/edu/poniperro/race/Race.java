@@ -1,7 +1,6 @@
 package edu.poniperro.race;
 
 import edu.poniperro.drivers.Driver;
-import edu.poniperro.drivers.PoolDrivers;
 
 public class Race {
     private String creditCard;
@@ -79,9 +78,5 @@ public class Race {
     }
     public Driver getDriver() {
         return this.driver;
-    }
-
-    public void assignDriver(PoolDrivers driver) {
-        setDriver(driver.assignDriver());
     }
 }
