@@ -1,10 +1,8 @@
 package edu.poniperro.drivers;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
-import java.lang.Math;
+
 
 public class Driver {
 
@@ -25,6 +23,10 @@ public class Driver {
         // this.enrollment = enrollment;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public void setModel(String model) {
         this.model = model;
     }
@@ -36,6 +38,7 @@ public class Driver {
     public void setRating(double rating) {
         // Cast to parse int into byte.
         this.ratings.add((byte) rating);
+        this.averageRating = this.calculateAverageRating();
     }
 
     public List<Byte> getRatings() {
