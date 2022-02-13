@@ -42,6 +42,10 @@ public class Race {
         this.destination = destination;
     }
 
+    public String getDestination() {
+        return this.destination;
+    }
+
     public void setDistance(double distance) {
         this.distance = distance;
     }
