@@ -39,6 +39,10 @@ public class Driver {
         this.enrollment = enrollment;
     }
 
+    public String getEnrollment() {
+        return this.enrollment;
+    }
+
     public void setRating(double rating) {
         // Cast to parse int into byte.
         this.ratings.add((byte) rating);
