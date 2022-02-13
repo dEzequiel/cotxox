@@ -49,8 +49,8 @@ public class Driver {
         this.averageRating = this.calculateAverageRating();
     }
 
-    public List<Byte> getRatings() {
-        return this.ratings;
+    public int getRatingNumbers() {
+        return this.ratings.size();
     }
 
     public void setOccupied(boolean status) {
@@ -64,7 +64,7 @@ public class Driver {
     private double calculateAverageRating() {
         // Convert each stream to int with map() and intValue() and then sum().
         double sum = ratings.stream().mapToInt(i -> i.intValue()).sum();
-        return sum / this.getRatings().size();
+        return sum / this.getRatingNumbers();
     }
 
     public void setAverageRating() {
