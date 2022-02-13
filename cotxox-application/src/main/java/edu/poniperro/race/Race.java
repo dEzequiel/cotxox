@@ -70,6 +70,10 @@ public class Race {
         return this.raceTime;
     }
 
+    public int getTotalCost() {
+        return this.totalCost;
+    }
+
     public void setDriver(Driver driver) {
         this.driver = driver;
     }
