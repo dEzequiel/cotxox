@@ -4,9 +4,9 @@ import edu.poniperro.drivers.Driver;
 import edu.poniperro.drivers.PoolDrivers;
 
 public class Race {
-    private String creditCard = "";
-    private String origin = "";
-    private String destination = "";
+    private String creditCard;
+    private String origin;
+    private String destination;
     private double distance;
     private int expectedTime;
     private int raceTime;
@@ -16,13 +16,10 @@ public class Race {
     private Driver driver = null;
      
     public Race() {
-
     }
 
-    public Race(String creditCard, String origin, String destination) {
+    public Race(String creditCard) {
         this.creditCard = creditCard;
-        this.origin = origin;
-        this.destination = destination;
     }
 
     public void setOrigin(String origin) {
@@ -55,12 +52,4 @@ public class Race {
     public void assignDriver(PoolDrivers driver) {
         setDriver(driver.assignDriver());
     }
-
-    
-
-
-
-
-
-
 }
