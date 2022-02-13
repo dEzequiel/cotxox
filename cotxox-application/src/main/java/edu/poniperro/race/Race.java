@@ -22,6 +22,12 @@ public class Race {
         this.creditCard = creditCard;
     }
 
+    public void setCreditCard(String creditCard) {
+        this.creditCard = creditCard;
+    }
+
+    
+
     public void setOrigin(String origin) {
         this.origin = origin;
     }
