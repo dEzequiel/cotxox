@@ -50,10 +50,10 @@ public class Driver {
         return this.isOccupied;
     }
 
-    public double calculateAverageRating() {
+    private double calculateAverageRating() {
         // Convert each stream to int with map() and intValue() and then sum().
-        int sum = ratings.stream().mapToInt(i -> i.intValue()).sum();
-        return (double) sum;
+        double sum = ratings.stream().mapToInt(i -> i.intValue()).sum();
+        return sum / this.getRatings().size();
     }
 
     public void setAverageRating() {
