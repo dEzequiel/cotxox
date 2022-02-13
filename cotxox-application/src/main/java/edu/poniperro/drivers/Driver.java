@@ -31,6 +31,10 @@ public class Driver {
         this.model = model;
     }
 
+    public String getModel() {
+        return this.model;
+    }
+
     public void setEnrollment(String enrollment) {
         this.enrollment = enrollment;
     }
