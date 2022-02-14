@@ -2,6 +2,7 @@ package edu.poniperro.race;
 
 import edu.poniperro.drivers.Driver;
 import edu.poniperro.drivers.PoolDrivers;
+import edu.poniperro.rate.Rate;
 
 public class Race {
     private String creditCard;
@@ -95,6 +96,10 @@ public class Race {
 
     public int getTip() {
         return this.tip;
+    }
+
+    public double getExpectedTotalCost() {
+        return Rate.getExpectedTotalCost(this);
     }
 
     public void releaseDriver() {
