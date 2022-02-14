@@ -30,15 +30,12 @@ public class PoolDriversTest {
         List<Driver> Drivers = new ArrayList<Driver>();
         PoolDrivers poolDrivers = new PoolDrivers(Drivers);
 
-        String[] nombres = { "Samantha", "Fox", "Mola" };
-		for (String nombre : nombres) {
-			Driver driver = new Driver(nombre);
-            poolDrivers.getPoolDrivers().add(driver);
-        }
+        String nombre = "Samantha";
+        Driver driver = new Driver(nombre);
+        poolDrivers.getPoolDrivers().add(driver);
+        race1.assignDriver(poolDrivers);
         
         assertEquals(true, race1.getDriver().isOccupied());
-
-
         }
 
     }
