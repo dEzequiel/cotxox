@@ -93,6 +93,10 @@ public class Race {
         this.tip = tip;
     }
 
+    public int getTip() {
+        return this.tip;
+    }
+
     public void releaseDriver() {
         getDriver().setOccupied(false);
     }
