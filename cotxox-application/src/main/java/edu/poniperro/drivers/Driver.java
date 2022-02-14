@@ -13,9 +13,7 @@ public class Driver {
     private boolean isOccupied = false;
     private List<Byte> ratings = new ArrayList<>();
     
-    public Driver(){
-
-    };
+    public Driver(){};
 
     public Driver(String name) {
         this.name = name;
@@ -70,13 +68,7 @@ public class Driver {
     public double getAverageRating() {
         return this.averageRating;
     }
-    
-    @Override
-    public String toString() {
-        StringBuilder output = new StringBuilder();
-        output.append("Driver: ").append(this.getName());
-        return output.toString();
-    }
+
 }
 
 
