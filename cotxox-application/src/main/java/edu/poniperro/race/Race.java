@@ -84,4 +84,11 @@ public class Race {
     public void assignDriver(PoolDrivers poolDrivers) {
         setDriver(poolDrivers.assignDriver());
     }
+
+    @Override
+    public String toString() {
+        StringBuilder output = new StringBuilder();
+        output.append(this.getDriver());
+        return output.toString();
+    }
 }

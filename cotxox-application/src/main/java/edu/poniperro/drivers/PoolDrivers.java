@@ -16,6 +16,10 @@ public class PoolDrivers {
         return this.drivers;
     }
 
+    public int getPoolDriversSize() {
+        return this.drivers.size();
+    }
+
     public Driver assignDriver() {
         Driver driver = new Driver();
         int PoolDriverNumber = ThreadLocalRandom.current().nextInt(getPoolDrivers().size());
