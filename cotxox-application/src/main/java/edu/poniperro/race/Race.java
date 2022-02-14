@@ -89,9 +89,12 @@ public class Race {
         this.totalCost -= payment;
     }
 
-
     public void receiveTip(int tip) {
         this.tip = tip;
+    }
+
+    public void releaseDriver() {
+        getDriver().setOccupied(false);
     }
 
     @Override
