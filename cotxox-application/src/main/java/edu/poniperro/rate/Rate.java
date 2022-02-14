@@ -19,7 +19,7 @@ public class Rate {
     }
 
     public static double getExpectedTotalCost(Race race) {
-        double totalCost = getCostDistance(race.getDistance()) + getCostTime(race.getTotalCost());
+        double totalCost = getCostDistance(race.getDistance()) + getCostTime(race.getExpectedTime());
        
         // variable = Expression1 ? Expression2: Expression3
         return totalCost > MIN_COST ? totalCost : MIN_COST;
