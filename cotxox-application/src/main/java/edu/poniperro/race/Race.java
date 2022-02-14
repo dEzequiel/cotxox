@@ -90,6 +90,10 @@ public class Race {
     }
 
 
+    public void receiveTip(int tip) {
+        this.tip = tip;
+    }
+
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
