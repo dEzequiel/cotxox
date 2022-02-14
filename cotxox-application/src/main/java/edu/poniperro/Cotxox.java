@@ -13,10 +13,6 @@ import edu.poniperro.drivers.*;
 public class Cotxox {
 
 	public static void main(String[] args) {
-		/*
-		 * Configuracion del usuario
-		 * y de la Race.
-		 */
 
 		String creditCard = "4916119711304546";
 		String origin = "Aeroport Son Sant Joan";
@@ -47,16 +43,8 @@ public class Cotxox {
 
 		System.out.println("\n#####" + "\t Get a Driver: \t" + "#####\n");
 
-		// /**
-		// * Necesitamos crear la flota de Driveres de donde seleccionar uno
-		// * para ofrecer el servicio.
-		// * La flota es un objeto de tipo PoolDriveres.
-		// */
 
 		List<Driver> poolDrivers = new ArrayList<Driver>();
-		// Driver driver = null;
-
-		// // creamos objetos Driver y los metemos en el array
 
 		String[] names = { "Samantha", "Fox", "Mola" };
 		for (String name : names) {
@@ -76,16 +64,9 @@ public class Cotxox {
 			index++;
 		}
 
-		// // Creamos el objeto flota de Driveres, de la clase PoolDriveres.
-
 		PoolDrivers drivers = new PoolDrivers(poolDrivers);
 
-		// /* Seleccion del Driver en la flota y asignacion a la Race */
-
 		race.assignDriver(drivers);
-		// Race.asignarDriver(Driveres);
-
-		// // Info por pantalla
 
 		System.out.println("Driver: " + race.getDriver().getName());
 		System.out.println("Type: " + race.getDriver().getModel());
