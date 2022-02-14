@@ -11,7 +11,7 @@ public class Race {
     private double distance;
     private int expectedTime;
     private int raceTime;
-    private int totalCost;
+    private double totalCost;
     private int tip;
 
     private Driver driver = null;
@@ -71,7 +71,7 @@ public class Race {
         return this.raceTime;
     }
 
-    public int getTotalCost() {
+    public double getTotalCost() {
         return this.totalCost;
     }
 
@@ -87,7 +87,7 @@ public class Race {
     }
 
     public void makePayment(double payment) {
-        this.totalCost -= payment;
+        this.totalCost = payment;
     }
 
     public void receiveTip(int tip) {
@@ -104,12 +104,5 @@ public class Race {
 
     public void releaseDriver() {
         getDriver().setOccupied(false);
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder output = new StringBuilder();
-        output.append(this.getDriver());
-        return output.toString();
     }
 }
