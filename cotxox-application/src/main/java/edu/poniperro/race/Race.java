@@ -85,6 +85,11 @@ public class Race {
         setDriver(poolDrivers.assignDriver());
     }
 
+    public void makePayment(double payment) {
+        this.totalCost -= payment;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
